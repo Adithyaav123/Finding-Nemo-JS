@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0">
+    <title>Nemo Game</title>
+    <style>
+             .circle-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+        }   
+
+       
+        .circle {
+            width: 150px;
+            height: 150px;
+            background-color:blue;
+            border-radius: 50%;
+            margin: 5px; 
+            cursor: pointer; 
+            position: relative;
+            margin: 0 auto; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        
+        .nemo-image {
+            display: none;
+            position: absolute;
+            width: 100px; 
+            height: 100px; 
+            top: 25px; 
+            left: 25px; 
+            border-radius: 50%;
+        }
+        
+        #message {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+            color:green;
+        }
+        table {
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center" , style="color:magenta">WELCOME TO NEMO GAME</h1>
+    <table>
+        <tr>
+           
+            <td><div class="circle"></div></td>
+            <td><div class="circle"></div></td>
+            <td><div class="circle"></div></td>
+            <td><div class="circle"></div></td>
+            <td><div class="circle nemo"></div></td> 
+        </tr>
+        <tr>
+           
+            <td><div class="circle"></div></td>
+            <td><div class="circle"></div></td>
+            <td><div class="circle"></div></td>
+            <td><div class="circle"></div></td>
+            <td><div class="circle"></div></td>
+        </tr>
+    <img class ="nemo-image" src="nemo.png" alt="Nemo Image">
+    <div id="message"></div>
+       
+    
+</body>
+<script src="nemo.js"></script>
+</html>
